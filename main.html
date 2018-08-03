@@ -175,7 +175,7 @@ function playback(index) {
             // Increment index
             index = (index + 1 === locations.length) ? 0 : index + 1;
             playback(index);
-        }, 9000); // After callback, show the location for 3 seconds.
+        }, 6000); // After callback, show the location for 3 seconds.
     });
 }
 
@@ -187,7 +187,7 @@ forbutton(locations.length - 1)
 map.on('load', function() {
     window.setTimeout(function(){
         playback(0);
-    },9000);
+    },6000);
     
 });
 function placeDiv(x_pos, y_pos) {
